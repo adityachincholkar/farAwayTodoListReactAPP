@@ -1,0 +1,113 @@
+/* Default stylings */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  background-color: green;
+} */
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  height: 50vh;
+  position: relative;
+  grid-template-areas:
+    "header header header right-sidebar"
+    "left-sidebar hero hero right-sidebar"
+    "left-sidebar main main right-sidebar"
+    "left-sidebar section1 section2 details"
+    "footer footer footer footer"
+} */
+
+@keyframes rotateME {
+  0% {
+    transform: rotate(0);
+    left: 0;
+  }
+  50% {
+    transform: rotate(180deg);
+    left: 100px;
+    top: 100px;
+
+  }
+  100% {
+    transform: rotate(360deg);
+    left: 200px;
+    top: 500px;
+
+  }
+}
+
+.dancingBox {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 200px;
+  left: 200px;
+  background-color: black;
+  animation-name: rotateME;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+}
+
+/* .grid-item {
+  border: 2px solid grey;
+}
+
+.g-item1 {
+  grid-area: header;
+  background-color: cyan;
+}
+.g-item2 {
+  grid-area: hero;
+  background-color: rgb(224, 64, 171);
+}
+.g-item3 {
+  grid-area: left-sidebar;
+  background-color: rgb(18, 218, 21);
+}
+.g-item4 {
+  grid-area: right-sidebar;
+  background-color: rgb(184, 227, 29);
+}
+.-item5{
+  grid-area: sec;
+  background-color: rgb(118, 18, 138);
+}
+.g-item6 {
+  grid-area: section2;
+  background-color: darksalmon;
+}
+.g-item7 {
+  grid-area: details;
+  background-color: deeppink;
+}
+.g-item8 {
+  grid-area: footer;
+  background-color: coral;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr auto 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr 1fr;
+    height: 100vh;
+    grid-template-areas:
+      "header header header right-sidebar"
+      "left-sidebar hero hero right-sidebar"
+      "left-sidebar main main right-sidebar"
+      "left-sidebar section2 details details"
+      "footer footer footer footer";
+  }
+} */
